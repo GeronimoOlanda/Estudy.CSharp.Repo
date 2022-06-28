@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -77,6 +78,77 @@ namespace Estudos.Fundamentos.Console.Fundamentos
             System.Console.WriteLine(splited);
             System.Console.WriteLine(trim);
 
+        }
+        public void switchMethod()
+        {
+            var dataAtual = DateTime.Now.ToString("dd/MM/yyyy");
+
+            switch (dataAtual)
+            {
+                case "28/06/2022":
+                    System.Console.WriteLine("Acertou talvez?");
+                    break;
+
+                case "29/06/2022":
+                    System.Console.WriteLine("Acertou talvez?");
+                    break;
+
+                case "30/06/2022":
+                    System.Console.WriteLine("Acertou talvez?");
+                    break;
+
+                default:
+                    System.Console.WriteLine("Padraozao");
+                    break;
+            }
+
+
+        }
+
+        public void methodLoop()
+        {
+            string primeiroNome = "Thalia";
+            string segundoNome = "Geronimo";
+
+            int idade1 = 24;
+            int idade2 = 24;
+
+            double altura1 = 1.86;
+            double altura2 = 1.67;
+
+            char sexo = 'F';
+
+
+            var tamanho = primeiroNome.Length;
+            var i = 0;
+
+            ArrayList list = new ArrayList();
+            list.Add("Thalia meu amor");
+            list.Add("Thalia sua mulher incrivel");
+            list.Add("Eu amo minha profissão!");
+            list.Add("Eu te amo Jesus Cristo!");
+
+            while (i < tamanho)
+            {
+                System.Console.WriteLine("Eu te amo meu amor!");
+                i++;
+            }
+
+            for (i = 0; i < 100; i++)
+            {
+                System.Console.WriteLine("Jesus Eu te Amo!");
+            }
+
+            do
+            {
+                System.Console.WriteLine("Funfou");
+                i++;
+            } while (i < 3);
+
+            foreach (var lista in list)
+            {
+                System.Console.WriteLine(lista);
+            }
         }
 
     }
